@@ -1,0 +1,67 @@
+body, html{
+    height:100%;
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+
+#FlashContainer{
+    width:200px;
+    height:100px;
+    border:0;
+}
+
+.example{
+    width:300px;
+    height:300px;
+    margin:20px;
+    padding:0 20px;
+    text-align:center;
+}
+
+#exampleFlash{
+    background:#d61d25;
+}
+
+#exampleHtml{
+    background:#e44d26;
+}
+
+#exampleFlash .example{
+    float:right;
+}
+
+#exampleHtml .example{
+    float:left;
+}
+
+.example button{
+    margin-top:5px;
+}
+
+#exampleContainer{
+    width:100%;
+    border-spacing:0;
+}
+
+#exampleContainer td, #exampleContainer tr{
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+h1{
+    text-align:center;
+    color:#444;
+}
+
+h2{
+    color:#ffffff;
+}
+
+p{
+    width:700px;
+    margin:25px auto;
+    text-align:center;
+    line-height:1.2;
+}

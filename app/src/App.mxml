@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   initialize="initializeHandler(event)" 
+			   creationComplete="creationCompleteHandler(event)"
+			   backgroundColor="#d61d25">
+	<fx:Script>
+		<![CDATA[
+			import com.flashwarp.*;
+			
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			
+			[Bindable]
+			private var binding:IObservable;
+
+			private function initializeHandler(event:FlexEvent):void
+			{
+				FlashWarp.map("hello", function(text:String):void{
+					Alert.show(text, "Message from HTML");
+				});
+				
+				binding = FlashWarp.binding("textfield");
+			}
+			
+			private function creationCompleteHandler(event:FlexEvent):void
+			{
+				binding.value = "Hello World";
+			}		
+			
+			private function clickHanlder(event:MouseEvent):void
+			{
+				FlashWarp.invoke("hello", [ txt.text ]);
+			}			
+		]]>
+	</fx:Script>
+
+	<s:VGroup width="100%" height="100%" horizontalAlign="center">
+		<s:TextInput id="txt" text="@{binding.value}" />
+		<s:Button label="Call HTML" click="clickHanlder(event)" />
+	</s:VGroup>
+	
+</s:Application>
