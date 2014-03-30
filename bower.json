@@ -1,0 +1,22 @@
+{
+  "name": "flash-warp-example",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {
+    "FlashWarp": "1.0.0"
+  },
+  "homepage": "https://github.com/artema/flash-warp-example",
+  "authors": [
+    "Artem Abashev <artem@abashev.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bin"
+  ],
+  "devDependencies": {
+    "FlashWarp": "1.0.0"
+  }
+}

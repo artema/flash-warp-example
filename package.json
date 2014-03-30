@@ -1,0 +1,25 @@
+{
+  "name": "flash-warp-example",
+  "version": "1.0.0",
+  "description": "FlashWarp library usage example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/artema/flash-warp-example.git"
+  },
+  "author": "Artem Abashev <artem@abashev.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artema/flash-warp-example/issues"
+  },
+  "homepage": "https://github.com/artema/flash-warp-example",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-clean": "^0.5.0",
+    "flex-sdk": "^4.6.0",
+    "grunt-mxmlc": "^0.5.0"
+  }
+}
